@@ -134,7 +134,13 @@ header {
     width: 100%;
     min-height: auto;
     padding: 150px 0 100px 0;
-    background: #0d1117;
+    /* Taustakuva-asetukset */
+    background-image: url("../img/portfolioheader.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Varaväri ja tekstin väri */
+    background-color: #0d1117; 
     color: #f0f6fc;
 }
 
