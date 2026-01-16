@@ -1,11 +1,27 @@
 ---
 layout: default
-modal-id: 1                          # Muuta uniikiksi numeroksi jokaiselle projektille (esim. 1, 2, 3...)
-date: 2025-01-13                     # Projektin "julkaisu-/valmistumispäivä" (YYYY-MM-DD)
-img: autonomous-agent-risk-workflow.webp
-alt: Multi-agent workflow for autonomous risk intelligence on Twitter data
-project-date: December 2025
-client: Personal Project             # Sopii erinomaisesti Kaggle-pohjaiselle työlle ilman ulkoista asiakasta
-category: Agentic AI & Risk Analysis
-description: Transition from manual monitoring to autonomous risk discovery using multi-agent AI on unstructured Twitter data (Kaggle ChatGPT dataset, 5,000-tweet sample). Implemented Hunter (high-recall anomaly detection), Critic (precision audit & severity scoring), and Sorter (dynamic prioritization) agents with CrewAI and Groq Llama-3.3-70B. Achieved ~90% reduction in manual analysis time.
+modal-id: 1
+date: 2026-01-16
+img: portfolio/uusi-kuva.webp
+alt: Autonomous AI Risk Workflow
+project-date: Tammikuu 2026
+client: Agentic AI Prototype
+category: AI Engineering
+description: |
+  #### Executive Summary
+  Automated pipeline that transforms 5,000 raw tweets into audited risk intelligence in 20 minutes.
+
+  #### Technical Stack
+  * **Framework:** CrewAI
+  * **Orchestration:** Python / LangChain
+  * **LLM:** Llama 3 via Groq (Ultra-low latency inference)
+
+  #### The Workflow (Hunter-Critic-Sorter)
+  1. **Hunter:** Uses high-recall prompts to scan for specific risk vectors.
+  2. **Critic:** Performs a "Reasoning Loop" to verify facts and reduce hallucinations.
+  3. **Sorter:** Normalizes the data and outputs a Top-10 prioritized list for leadership.
+
+  #### Business Impact
+  * **90% faster** than manual OSINT analysis.
+  * Scalable to millions of data points with minimal cost increase.
 ---
