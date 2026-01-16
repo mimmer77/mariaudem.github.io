@@ -1,3 +1,6 @@
-theme: jekyll-theme-minimal
-title: Maria Udem
-description: Data Analyst | Power BI & Python Projects
+title: Maria Udem - Portfolio
+email: your-email@example.com          # Formspree/contact-lomaketta varten
+description: Agentic AI Builder & Analytics Specialist | CrewAI Multi-Agent Risk Intelligence
+
+baseurl: ""                            # Tärkeä käyttäjänimesi.github.io -sivustolle
+url: "https://mariaudem.github.io"
