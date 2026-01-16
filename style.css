@@ -1,3 +1,452 @@
----
-layout: style
----
+/*!
+ * Start Bootstrap - Freelancer[](http://startbootstrap.com/)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* General styles */
+
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #18bc9c;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #18bc9c;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #128f7e;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+/* Top Navigation */
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #2c3e50;
+}
+
+.navbar-custom .navbar-toggle {
+    color: #fff;
+    background-color: rgba(255,255,255,.1);
+    font-size: 12px;
+}
+
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+    color: #18bc9c;
+}
+
+.navbar-custom .nav li a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-custom .nav li a:focus {
+    outline: 0;
+}
+
+.navbar-custom .nav li a:hover {
+    color: rgba(255,255,255,.8);
+}
+
+.navbar-custom .nav li.active {
+    outline: none;
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a {
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding: 150px 0 100px 0;
+    background: #18bc9c;
+    color: #fff;
+}
+
+header .header-content {
+    text-align: center;
+    padding: 0 15px;
+}
+
+header .header-content .header-content-inner {
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header .header-content .header-content-inner h1 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+    width: 100px;
+    border-top: 2px solid #fff;
+}
+
+header .header-content .header-content-inner p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+        padding: 200px 0;
+    }
+
+    header .header-content .header-content-inner h1 {
+        font-size: 60px;
+    }
+
+    header .header-content .header-content-inner p {
+        font-size: 22px;
+    }
+}
+
+/* Sections */
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0 0 50px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Portfolio Section */
+
+#portfolio .portfolio-item {
+    margin: 0 0 15px;
+    right: 0;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    color: #fff;
+    top: 50%;
+    margin-top: -12px;
+    text-align: center;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* About Section */
+
+#about {
+    background: #18bc9c;
+    color: #fff;
+}
+
+#about hr.star-light,
+#about hr.star-primary {
+    margin: 20px auto 30px;
+    padding: 0;
+    max-width: 200px;
+    border: 0;
+    border-top: 4px solid #fff;
+    text-align: center;
+}
+
+#about hr.star-light:after,
+#about hr.star-primary:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-size: 2em;
+}
+
+#about hr.star-light:after {
+    background-color: #18bc9c;
+}
+
+#about hr.star-primary:after {
+    background-color: #2c3e50;
+}
+
+/* Contact Section */
+
+#contact {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+#contact hr.star-primary {
+    margin: 20px auto 30px;
+    padding: 0;
+    max-width: 200px;
+    border: 0;
+    border-top: 4px solid #fff;
+    text-align: center;
+}
+
+#contact hr.star-primary:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-size: 2em;
+    background-color: #2c3e50;
+}
+
+/* Footer */
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+footer span.copyright {
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none;
+}
+
+footer ul.quick-links {
+    margin-bottom: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-transform: none;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    background-color: #222;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    outline: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #18bc9c;
+}
+
+/* Scroll to Top Button */
+
+.scroll-top {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 40px;
+    height: 40px;
+    z-index: 1049;
+}
+
+.scroll-top .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+/* Responsive */
+
+@media(min-width:768px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+/* Custom styles for Freelancer theme */
+
+hr.star-primary,
+hr.star-light {
+    border: none;
+    border-top: 4px solid;
+    max-width: 250px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+hr.star-primary:after,
+hr.star-light:after {
+    font-family: FontAwesome;
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+/* Portfolio Modal */
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0
