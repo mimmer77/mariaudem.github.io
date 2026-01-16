@@ -1,7 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer (http://startbootstrap.com/)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Korjattu: Maria Udem Portfolio - Deep Tech Theme
  */
 
 /* General styles */
@@ -9,23 +8,25 @@
 body {
     overflow-x: hidden;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #0d1117;
+    color: #f0f6fc;
 }
 
 .text-muted {
-    color: #777;
+    color: #8b949e;
 }
 
 .text-primary {
-    color: #00e5ff;
+    color: #4db6ac; /* Pehmeä korostusväri syaaninvärisen sijaan */
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a,
@@ -34,142 +35,85 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+    text-decoration: none;
 }
 
 a {
-    color: #00e5ff;
+    color: #4db6ac;
 }
 
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: #00b2cc;
+a:hover {
+    color: #80cbc4;
 }
 
 /* Headings */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color: #f0f6fc;
 }
 
 /* Top Navigation */
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(255,255,255,.1);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #0d1117;
 }
 
-.navbar-custom .navbar-toggle {
-    color: #fff;
-    background-color: rgba(255,255,255,.1);
-    font-size: 12px;
-}
-
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
-    outline: 0;
-}
-
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    color: #f0f6fc;
 }
 
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus {
-    color: #00e5ff;
+.navbar-custom .navbar-brand:hover {
+    color: #4db6ac;
 }
 
 .navbar-custom .nav li a {
-    display: block;
-    padding: 10px 20px;
     font-weight: 700;
-    color: #fff;
-}
-
-.navbar-custom .nav li a:focus {
-    outline: 0;
+    color: #f0f6fc;
 }
 
 .navbar-custom .nav li a:hover {
-    color: rgba(0, 229, 255, .8);
+    color: #4db6ac;
 }
 
 .navbar-custom .nav li.active {
-    outline: none;
-    background-color: rgba(0, 229, 255, .3);
+    background-color: #1a4d4d; /* Valitun linkin taustaväri */
 }
 
-.navbar-custom .nav li.active a {
-    background-color: transparent;
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: #fff;
-}
-
-/* Header */
+/* Header - Korjattu taustakuva ja overlay */
 
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     padding: 150px 0 100px 0;
-    /* Taustakuva-asetukset */
-    background-image: url("../img/portfolioheader.webp");
+    /* Tumma liukuväri kuvan päällä häivyttää pikselöitymisen */
+    background: linear-gradient(rgba(13, 17, 23, 0.75), rgba(13, 17, 23, 0.85)), 
+                url("../img/portfolioheader.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Varaväri ja tekstin väri */
     background-color: #0d1117; 
     color: #f0f6fc;
-}
-
-header .header-content {
     text-align: center;
-    padding: 0 15px;
 }
 
-header .header-content .header-content-inner {
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin: 0 auto;
-    max-width: 800px;
+header img.img-circle {
+    border: 3px solid #1a4d4d;
+    max-width: 250px;
+    margin-bottom: 20px;
 }
 
-header .header-content .header-content-inner h1 {
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-header .header-content .header-content-inner hr {
+header .header-content-inner hr {
     margin: 30px auto;
     width: 100px;
-    border-top: 2px solid #00e5ff;
-}
-
-header .header-content .header-content-inner p {
-    font-size: 18px;
-    margin-bottom: 50px;
+    border-top: 3px solid #1a4d4d;
 }
 
 @media(min-width:768px) {
@@ -177,131 +121,41 @@ header .header-content .header-content-inner p {
         min-height: 100%;
         padding: 200px 0;
     }
-
-    header .header-content .header-content-inner h1 {
-        font-size: 60px;
-    }
-
-    header .header-content .header-content-inner p {
-        font-size: 22px;
-    }
-}
-
-/* Sections */
-
-section {
-    padding: 100px 0;
-}
-
-section h2 {
-    margin: 0 0 50px 0;
-    font-size: 40px;
-    font-weight: 700;
 }
 
 /* Portfolio Section */
 
-#portfolio .portfolio-item {
-    margin: 0 0 15px;
-    right: 0;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    position: relative;
-    display: block;
-    max-width: 400px;
-    margin: 0 auto;
+#portfolio {
+    background-color: #0d1117;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-    opacity: 0;
-    background: rgba(0, 229, 255, .9);
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 1;
+    background: rgba(26, 77, 77, 0.9); /* Syvä vihreä hover-efekti */
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    font-size: 20px;
-    color: #0d1117;
-    top: 50%;
-    margin-top: -12px;
-    text-align: center;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-    margin: 0;
+    color: #f0f6fc;
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #f0f6fc;
-    text-align: center;
-    padding: 25px;
+    background-color: #161b22;
+    color: #f0f6fc;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
-    margin: 0;
-    text-transform: none;
-}
-
-#portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 16px;
-    margin: 0;
-}
-
-/* About Section */
+/* About Section - Poistettu karsea syaani */
 
 #about {
-    background: #00e5ff;
-    color: #0d1117;
+    background: #1a4d4d; /* Ammattimainen tumma petroli */
+    color: #f0f6fc;
 }
 
-#about hr.star-light,
-#about hr.star-primary {
-    margin: 20px auto 30px;
-    padding: 0;
-    max-width: 200px;
-    border: 0;
-    border-top: 4px solid #0d1117;
-    text-align: center;
-}
-
-#about hr.star-light:after,
-#about hr.star-primary:after {
-    content: "\f005";
-    font-family: FontAwesome;
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-size: 2em;
+#about hr.star-light {
+    border-top: 4px solid #f0f6fc;
 }
 
 #about hr.star-light:after {
-    background-color: #00e5ff;
-}
-
-#about hr.star-primary:after {
-    background-color: #0d1117;
+    background-color: #1a4d4d;
+    color: #f0f6fc;
 }
 
 /* Contact Section */
@@ -312,154 +166,56 @@ section h2 {
 }
 
 #contact hr.star-primary {
-    margin: 20px auto 30px;
-    padding: 0;
-    max-width: 200px;
-    border: 0;
-    border-top: 4px solid #00e5ff;
-    text-align: center;
+    border-top: 4px solid #4db6ac;
 }
 
 #contact hr.star-primary:after {
-    content: "\f005";
-    font-family: FontAwesome;
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-size: 2em;
     background-color: #0d1117;
-    color: #00e5ff;
+    color: #4db6ac;
 }
 
 /* Footer */
 
 footer {
-    padding: 25px 0;
-    text-align: center;
+    padding: 50px 0;
     background-color: #0d1117;
-    color: #f0f6fc;
-}
-
-footer span.copyright {
-    line-height: 40px;
-    text-transform: uppercase;
-    text-transform: none;
-}
-
-footer ul.quick-links {
-    margin-bottom: 0;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-transform: none;
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
+    color: #8b949e;
+    border-top: 1px solid rgba(255,255,255,.05);
 }
 
 ul.social-buttons li a {
-    display: block;
-    background-color: #1a202c;
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    color: #00e5ff;
-    outline: 0;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+    background-color: #161b22;
+    color: #4db6ac;
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #00e5ff;
+ul.social-buttons li a:hover {
+    background-color: #4db6ac;
     color: #0d1117;
 }
 
 /* Scroll to Top Button */
 
-.scroll-top {
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    width: 40px;
-    height: 40px;
-    z-index: 1049;
-}
-
 .scroll-top .btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 1.5;
-    background-color: #00e5ff;
+    background-color: #4db6ac;
     color: #0d1117;
 }
 
-.scroll-top .btn:focus {
-    outline: 0;
-}
-
-/* Responsive */
-
-@media(min-width:768px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
-/* Custom styles for Freelancer theme */
-
-hr.star-primary,
-hr.star-light {
+/* Yleiset viivat (star-light/primary) */
+hr.star-primary, hr.star-light {
     border: none;
     border-top: 4px solid;
     max-width: 250px;
     margin: 25px auto;
-    text-align: center;
 }
 
-hr.star-primary:after,
-hr.star-light:after {
-    font-family: FontAwesome;
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -0.8em;
-    font-size: 2em;
-    padding: 0 0.25em;
-}
+hr.star-primary { border-color: #4db6ac; }
+hr.star-primary:after { background-color: #0d1117; color: #4db6ac; }
 
-hr.star-primary {
-    border-color: #00e5ff;
-}
+hr.star-light { border-color: #f0f6fc; }
+hr.star-light:after { background-color: #1a4d4d; color: #f0f6fc; }
 
-hr.star-primary:after {
-    color: #00e5ff;
-    background-color: #0d1117;
-}
-
-hr.star-light {
-    border-color: #f0f6fc;
-}
-
-hr.star-light:after {
-    color: #00e5ff;
-    background-color: #0d1117;
-}
-
-/* Portfolio Modal */
-
+/* Modals */
 .portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
     background-color: #0d1117;
     color: #f0f6fc;
 }
