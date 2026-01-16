@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1                          # Muuta uniikiksi numeroksi jokaiselle projektille (esim. 1, 2, 3...)
 date: 2025-01-13                     # Projektin "julkaisu-/valmistumispäivä" (YYYY-MM-DD)
-img: autonomous-agent-risk-workflow.png
+img: img/portfolio/autonomous-agent-risk-workflow.png
 alt: Multi-agent workflow for autonomous risk intelligence on Twitter data
 project-date: December 2025
 client: Personal Project             # Sopii erinomaisesti Kaggle-pohjaiselle työlle ilman ulkoista asiakasta
